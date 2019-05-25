@@ -1,6 +1,7 @@
 #define IN "P05IN.txt"
 #define OUT "P05OUT.txt"
 #include <stdio.h>
+#include <algorithm>
 void redir();
 void dir();
 #define maxn 1000 + 10
@@ -36,10 +37,7 @@ int main()
                     if (b[i] == d)
                         c2++;
                 }
-                if (c1 < c2)
-                    B += c1;
-                else
-                    B += c2;
+                B += std::min(c1,c2);
             }
             printf("    (%d,%d)\n", A, B - A);
         }
