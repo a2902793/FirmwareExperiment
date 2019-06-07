@@ -30,16 +30,16 @@ int main()
     }
     while (1)
     {
-        cin >> s1;
+        cin >> s1;  // Pile/Move
         if (s1 == "quit")
         { // '==' is overloaded for type string
             break;
         }
         else
         {
-            cin >> a >> s2 >> b;
-            find_block(a, pa, ha);
-            find_block(b, pb, hb);
+            cin >> a >> s2 >> b; // a over/onto b
+            find_block(a, pa, ha);  // 更動pa,ha值
+            find_block(b, pb, hb);  // 更動pb,hb值
             if (pa == pb)
             {
                 continue; //非法指令
