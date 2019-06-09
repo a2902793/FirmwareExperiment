@@ -57,6 +57,7 @@ int readcodes(void)
         }
     }
 }
+
 //讀取長度為c的01字串(二進位整數), 並將其轉換為十進位整數
 int readint(int c)
 {

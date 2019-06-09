@@ -19,12 +19,15 @@ int main()
         for (;;)
         {
             int A = 0, B = 0;
+            /* 猜幾A */
             for (int i = 0; i < n; i++)
             {
                 scanf("%d", &b[i]);
                 if (a[i] == b[i])
                     A++;
             }
+
+            /* 猜幾B */
             if (b[0] == 0)
                 break;
             for (int d = 1; d <= 9; d++)

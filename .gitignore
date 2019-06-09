@@ -1,5 +1,4 @@
 # 檔案名稱 .gitignore
-
-# 忽略 secret.yml 檔案
 .vscode/
 .DS_Store
+TryOut/
