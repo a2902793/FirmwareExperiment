@@ -1,20 +1,18 @@
 #define IN "P01IN.txt"
 #define OUT "P01OUT.txt"
-#include <iostream>
+#include <stdio.h>
 void redir();
 void dir();
 
-int main()
-{
+int main() {
     redir();
     int n, count = 0;
-    std::cin >> n;
-    while (n > 1)
-    {
+    scanf("%d", &n);
+    while (n > 1) {
         n % 2 == 1 ? n = 3*n + 1 : n /= 2;
         count++;
     }
-    std::cout << count << std::endl;
+    printf("%d", count);
     dir();
     return 0;
 }

@@ -9,10 +9,8 @@ int main()
     redir();
     char c;
     bool q;
-    while((c = getchar()) != EOF)
-    {
-        if(c == '"')
-        {
+    while((c = getchar()) != EOF) {
+        if(c == '"') {
             printf("%s", q ? "``" : "''");
             q = !q;
         }
